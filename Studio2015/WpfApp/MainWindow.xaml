@@ -10,6 +10,7 @@
         <StackPanel>
             <TextBlock Text="dev - 1st commit"/>
             <TextBlock Text="dev - 2nd commit"/>
+            <TextBlock Text="dev - 3rd commit"/>
         </StackPanel>
     </Grid>
 </Window>

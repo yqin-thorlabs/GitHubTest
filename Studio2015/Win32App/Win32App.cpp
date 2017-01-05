@@ -11,6 +11,8 @@ int main()
 {
 	cout << "dev - 1st commit" << endl;
 	cout << "dev - 2nd commit" << endl;
+	cout << "dev - 3rd commit" << endl;
+
 	return 0;
 }
 
