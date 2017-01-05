@@ -13,6 +13,7 @@ int main()
 	cout << "dev - 2nd commit" << endl;
 	cout << "dev - 3rd commit" << endl;
 	cout << "feature1 - 1st commit" << endl;
+	cout << "feature1 - 2nd commit" << endl;
 
 	return 0;
 }
