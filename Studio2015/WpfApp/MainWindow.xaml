@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <StackPanel>
+            <TextBlock Text="dev - 1st commit"/>
+        </StackPanel>
     </Grid>
 </Window>
