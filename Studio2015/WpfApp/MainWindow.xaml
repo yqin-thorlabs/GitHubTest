@@ -13,6 +13,8 @@
             <TextBlock Text="dev - 3rd commit"/>
             <TextBlock Text="feature1 - 1st commit"/>
             <TextBlock Text="feature1 - 2nd commit"/>
+            <TextBlock Text="feature2 - 1st commit"/>
+            <TextBlock Text="feature2 - 2nd commit"/>
         </StackPanel>
     </Grid>
 </Window>
