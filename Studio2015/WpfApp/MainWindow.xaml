@@ -9,6 +9,7 @@
     <Grid>
         <StackPanel>
             <TextBlock Text="beta-release - 1st commit"/>
+            <TextBlock Text="beta-release - 2nd commit"/>
         </StackPanel>
     </Grid>
 </Window>

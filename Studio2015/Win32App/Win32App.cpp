@@ -10,6 +10,8 @@ using namespace std;
 int main()
 {
 	cout << "beta-release - 1st commit" << endl;
+	cout << "beta-release - 2nd commit" << endl;
+
 	return 0;
 }
 
