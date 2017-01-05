@@ -11,6 +11,7 @@
             <TextBlock Text="dev - 1st commit"/>
             <TextBlock Text="dev - 2nd commit"/>
             <TextBlock Text="dev - 3rd commit"/>
+            <TextBlock Text="feature2 - 1st commit"/>
         </StackPanel>
     </Grid>
 </Window>
