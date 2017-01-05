@@ -9,6 +9,7 @@ using namespace std;
 
 int main()
 {
+	cout << "beta-release - 1st commit" << endl;
 	return 0;
 }
 
