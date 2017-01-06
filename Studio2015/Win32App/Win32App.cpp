@@ -18,6 +18,7 @@ int main()
 	cout << "feature1 - 2nd commit" << endl;
 	cout << "feature2 - 1st commit" << endl;
 	cout << "feature2 - 2nd commit" << endl;
+	cout << "beta-release - 3rd commit" << endl;
 
 	return 0;
 }
