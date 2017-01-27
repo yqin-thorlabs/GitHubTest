@@ -24,6 +24,7 @@ int main()
 	cout << "dev - 5th commit" << endl;
 	cout << "beta-release - 4th commit" << endl;
 	cout << "dev - 6th commit" << endl;
+	cout << "dev - 7th commit" << endl;
 
 	return 0;
 }
