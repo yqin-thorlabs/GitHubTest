@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MathNet.Numerics.LinearAlgebra;
 
 namespace WpfApp
 {
@@ -23,6 +24,8 @@ namespace WpfApp
         public MainWindow()
         {
             InitializeComponent();
+
+            Matrix<double> m = Matrix<double>.Build.Random(3, 4);
         }
     }
 }
