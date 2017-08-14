@@ -1,8 +1,14 @@
 #pragma once
 
+#ifdef WIN32LIB_EXPORTS  
+#define LIBRARY_API __declspec(dllexport)   
+#else  
+#define LIBRARY_API __declspec(dllimport)   
+#endif  
+
 #include <string>
 
-class Person
+class LIBRARY_API Person
 {
 private:
 	std::string _name;
