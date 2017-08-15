@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using CSharpLib;
 
-namespace CSharpLibTest_NUnit
+namespace CSharpLibNUnitTest
 {
     [TestFixture]
     public class PersonTests
