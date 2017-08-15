@@ -1,10 +1,10 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WpfApp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CSharpLib;
 
 namespace WpfAppTest_MSTest //WpfApp.Tests
 {
@@ -12,7 +12,7 @@ namespace WpfAppTest_MSTest //WpfApp.Tests
     public class PersonTests
     {
         [TestMethod()]
-        public void CtorTest()
+        public void PersonMSTest()
         {
             Person p = new Person("David", 20);
             Assert.AreEqual("David", p.Name);

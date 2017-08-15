@@ -7,7 +7,7 @@ namespace CSharpLibTest_NUnit
     public class PersonTests
     {
         [Test()]
-        public void PersonTest_NUnit()
+        public void PersonNUnitTest()
         {
             Person p = new Person("David", 20);
             Assert.AreEqual("David", p.Name);
