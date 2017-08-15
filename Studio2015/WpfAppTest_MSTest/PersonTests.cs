@@ -6,15 +6,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfApp.Tests
+namespace WpfAppTest_MSTest //WpfApp.Tests
 {
     [TestClass()]
     public class PersonTests
     {
         [TestMethod()]
-        public void PersonTest()
+        public void CtorTest()
         {
-            Assert.Fail();
+            Person p = new Person("David", 20);
+            Assert.AreEqual("David", p.Name);
+            Assert.AreEqual(20, p.Age);
         }
     }
 }

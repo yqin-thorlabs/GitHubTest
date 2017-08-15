@@ -69,7 +69,6 @@
   </Choose>
   <ItemGroup>
     <Compile Include="PersonTests.cs" />
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

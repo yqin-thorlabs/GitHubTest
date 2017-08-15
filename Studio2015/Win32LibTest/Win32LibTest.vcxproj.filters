@@ -29,9 +29,6 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Win32Lib_GTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="PersonTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

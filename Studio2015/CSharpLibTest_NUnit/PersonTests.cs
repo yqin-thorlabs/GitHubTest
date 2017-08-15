@@ -1,18 +1,13 @@
 ﻿using NUnit.Framework;
-using WpfApp;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using CSharpLib;
 
-namespace WpfApp.Tests
+namespace CSharpLibTest_NUnit
 {
-    [TestFixture()]
+    [TestFixture]
     public class PersonTests
     {
         [Test()]
-        public void PersonTest()
+        public void PersonTest_NUnit()
         {
             Person p = new Person("David", 20);
             Assert.AreEqual("David", p.Name);

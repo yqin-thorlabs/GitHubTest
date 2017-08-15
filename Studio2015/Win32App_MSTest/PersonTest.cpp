@@ -19,6 +19,7 @@ namespace Win32App_MSTest
 			p->SetName("Catherine");
 			Assert::AreEqual("Catherine", p->GetName().c_str());
 		}
+
 		TEST_METHOD(SetNameTest)
 		{
 			Person *p = new Person();
@@ -27,6 +28,7 @@ namespace Win32App_MSTest
 			p->SetName("Catherine");
 			Assert::AreEqual("Catherine", p->GetName().c_str());
 		}
+
 		TEST_METHOD(GetAgeTest)
 		{
 			Person *p = new Person();
@@ -35,6 +37,7 @@ namespace Win32App_MSTest
 			p->SetAge(20);
 			Assert::AreEqual(20, p->GetAge());
 		}
+
 		TEST_METHOD(SetAgeTest)
 		{
 			Person *p = new Person();
