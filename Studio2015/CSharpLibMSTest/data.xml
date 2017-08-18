@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<testcases>
+  <testcase>
+    <num1>2</num1>
+    <num2>3</num2>
+    <sum>5</sum>
+    <mul>6</mul>
+  </testcase>
+  <testcase>
+    <num1>3</num1>
+    <num2>4</num2>
+    <sum>7</sum>
+    <mul>12</mul>
+  </testcase>
+  <testcase>
+    <num1>4</num1>
+    <num2>5</num2>
+    <sum>9</sum>
+    <mul>20</mul>
+  </testcase>
+</testcases>

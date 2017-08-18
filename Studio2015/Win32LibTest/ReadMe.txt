@@ -1,3 +1,4 @@
+Google Test / Mock
 ========================================================================
     CONSOLE APPLICATION : Win32LibTest Project Overview
 ========================================================================
@@ -38,3 +39,4 @@ AppWizard uses "TODO:" comments to indicate parts of the source code you
 should add to or customize.
 
 /////////////////////////////////////////////////////////////////////////////
+

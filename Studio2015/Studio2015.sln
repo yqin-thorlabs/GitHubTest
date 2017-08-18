@@ -24,6 +24,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLibMSTest", "CSharpLibMSTest\CSharpLibMSTest.csproj", "{D69B5D7D-5BCF-4537-9956-52F0B6776B1D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLibNUnitTest", "CSharpLibNUnitTest\CSharpLibNUnitTest.csproj", "{3A3EC520-C3CC-42BD-83E1-BA0A9AFC4C10}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4AD4BD06-FF04-4AB6-A6DE-E60727B1A113} = {4AD4BD06-FF04-4AB6-A6DE-E60727B1A113}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

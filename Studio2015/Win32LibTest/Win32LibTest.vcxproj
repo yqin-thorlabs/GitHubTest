@@ -154,6 +154,8 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="EmployeeTest.cpp" />
+    <ClCompile Include="MyCalculatorTest.cpp" />
     <ClCompile Include="PersonTest.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>

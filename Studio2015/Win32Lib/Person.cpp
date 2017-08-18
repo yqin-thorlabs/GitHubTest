@@ -2,14 +2,12 @@
 #include "Person.h"
 
 
-Person::Person()
+Person::Person() : IPerson()
 {
 }
 
-Person::Person(std::string name, int age)
+Person::Person(std::string name, int age) : IPerson(name,  age)
 {
-	_name = name;
-	_age = age;
 }
 
 Person::~Person()
@@ -33,5 +31,17 @@ int Person::GetAge()
 
 void Person::SetAge(int age)
 {
+	_age = age;
+}
+
+void Person::GetInfo(std::string & name, int & age)
+{
+	name = _name;
+	age = _age;
+}
+
+void Person::SetInfo(std::string name, int age)
+{
+	_name = name;
 	_age = age;
 }
