@@ -17,8 +17,12 @@ namespace CSharpLibMSTest
         {
 
         }
-        
+
         // csv file should use ASCII / UTF-8, not Unicode UTF-8
+        // NOTE:
+        // 1. Although the active platform is x64 for both lib and the test projects. but the Build target in project->build MUST be set to x86.
+        //    Otherwise, "microsoft.Jet.OLEDB.4.0 provider is not registered" will show up when run the test.
+        // 2. Or download 64 bit Microsoft Access Database Engine (). But if office installed, it MUST be 16 bit version.
         [TestMethod]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @"data.csv", "data#csv", DataAccessMethod.Sequential)]
         public void AddTest1_MSTest()
@@ -32,7 +36,7 @@ namespace CSharpLibMSTest
         }
 
         [TestMethod]
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", @"data.xml", "data#xml", DataAccessMethod.Sequential)]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", @"data.xml", "testcase", DataAccessMethod.Sequential)]
         public void AddTest2_MSTest()
         {
             Calculator calc = new Calculator();
@@ -45,8 +49,16 @@ namespace CSharpLibMSTest
 
         // json file
         [TestMethod]
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", @"data.xml", "data#xml", DataAccessMethod.Sequential)]
         public void AddTest3_MSTest()
+        {
+            // no support from MSTest. Just convert it to csv or xml and then test it
+        }
+
+        // Excel file
+        // must copy the excel file to the test dll folder
+        [TestMethod]
+        [DataSource("System.Data.OleDB", @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source=.\data.xlsx; Extended Properties='Excel 12.0;HDR=yes';", "Sheet1$", DataAccessMethod.Sequential)]
+        public void AddTest4_MSTest()
         {
             Calculator calc = new Calculator();
             int num1 = Convert.ToInt32(TestContext.DataRow[0]);
@@ -56,19 +68,13 @@ namespace CSharpLibMSTest
             Assert.AreEqual(expected, result);
         }
 
-        // Excel file
+        // TODO - use SQL Express for data source
         [TestMethod]
-        //[DataSource("System.Data.OleDb", @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source=E:\Temp\GitHubTest\Studio2015\CSharpLibMSTest\data.xlsx;Extended Properties='Excel 12.0;HDR=YES'", "Sheet1$", DataAccessMethod.Sequential)]
-        [DataSource("System.Data.OleDB", @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source=.\data.xlsx; Extended Properties='Excel 12.0;HDR=yes';", "Sheet1$",DataAccessMethod.Sequential)]
-        [DeploymentItem(@".\data.xlsx")]
-        public void AddTest4_MSTest()
+        //[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True","Data", DataAccessMethod.Sequential)]
+        // https://www.linkedin.com/pulse/visual-studio-mstest-data-injection-john-peters
+        public void AddTest5_MSTest()
         {
-            Calculator calc = new Calculator();
-            int num1 = Convert.ToInt32(TestContext.DataRow[0]);
-            int num2 = Convert.ToInt32(TestContext.DataRow[1]);
-            int expected = Convert.ToInt32(TestContext.DataRow[2]);
-            var result = calc.Add(num1, num2);
-            Assert.AreEqual(expected, result);
+            //throw(new NotImplementedException());
         }
     }
 }

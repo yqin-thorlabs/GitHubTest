@@ -1,32 +1,49 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharpLib
 {
     public class Person : IPerson
     {
-        public Person(string name, int age)
+        private int _age;
+        private string _name;
+
+        // virtual member / function may be overridden many times, 
+        // only the most derived type will be executed. So virtual member / function
+        // should not be called in constructor
+        public Person()
         {
-            Name = name;
-            Age = age;
+
         }
 
-        public int Age { get; set; }
+        public Person(string name, int age)
+        {
+            _name = name;
+            _age = age;
+        }
 
-        public string Name { get; set; }
+        public virtual int Age
+        {
+            get { return _age; }
+            set { _age = value; }
+        }
+
+        public virtual string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
 
         public void GetInfo(out int age, ref string info)
         {
             throw new NotImplementedException();
         }
+
         public void GetInfo(out string info)
         {
             throw new NotImplementedException();
         }
-        public void GetInfo(string name, out int age, ref string info)
+
+        public virtual void GetInfo(string name, out int age, ref string info)
         {
             throw new NotImplementedException();
         }
